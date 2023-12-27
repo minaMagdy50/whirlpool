@@ -1,11 +1,9 @@
 var test=[]
 
-if(localStorage.getItem('lista2') != null  ){
+if(localStorage.getItem('lista2') != null   ){
 
 
 test = JSON.parse(localStorage.getItem('lista2'))
-
-
 
 }
 
@@ -17,6 +15,10 @@ var passwordInput2 = document.getElementById('passwordInput2')
 
 function singin(){
 
+    if(localStorage.getItem('lista2') == undefined){
+        document.getElementById("test").click()
+
+    }
 
     for(  var i=0 ; i < test.length ; i++    ){
 
