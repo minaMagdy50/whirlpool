@@ -1,0 +1,89 @@
+::selection{
+    background-color: #00ff0a;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #111;
+    font-size: 1.3em;
+    font-family: 'Quantico', sans-serif;
+}
+h2, input, a ,button{
+    color: white;
+    font-family: 'Quantico', sans-serif;
+}
+
+.wrapper{
+    position: relative;
+    width: 34.375rem;
+    height: 34.375rem;
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    
+}
+.wrapper i {
+    position: absolute;
+    inset: 0;
+    border: .125rem solid #fff;
+    transition: 0.5s;
+}
+
+.wrapper .child1{
+    border-radius: 
+    38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: anim 6s linear infinite;
+}
+.wrapper .child2{
+    border-radius: 
+    41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: anim 4s linear infinite;
+}
+.wrapper .child3{
+    border-radius: 
+    41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: anim2 10s linear infinite;
+}
+
+.wrapper:hover i {
+    border: .375rem solid #00ff0a;
+    filter: drop-shadow(0 0 20px #00ff0a);
+}
+
+@keyframes anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes anim2 {
+    0%{
+        transform: rotate(360de);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+@media screen and (max-width: 762px) {
+    .wrapper{
+        width: 350px;
+        height: 400px;
+       
+    }
+    .wrapper i{
+        width: 350px;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
+ 
+
+

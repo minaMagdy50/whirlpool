@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whirlpool</title>
+    <link rel="shortcut icon" href="imgs/whirlpool-svgrepo-com.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+        <div class="wrapper">
+            <i  class="child1" style="color: #00ff0a"></i>
+            <i class="child2"  style="color: #ff0057"></i>
+            <i class="child3" style="color: #ff0057"></i>
+            <div class="login">
+                <h2>Login</h2>
+                <input type="email" name="login" id="Usernameinput" placeholder="Username">
+                <input type="password" id="passwordInput2" placeholder="Password">
+                <button type="button" class="btn btn-outline-light w-50 rounded-5" onclick=" singin() ">sign in</button>
+                <div class="links px-4">
+                    <p>Don't have an account?</p>
+                    <a class="pb-1" href="./signup.html">signup</a>
+                </div>
+            </div>
+        </div>
+
+           <!-- Button trigger modal -->
+<button id="test" type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade pt-5 mt-5 p-3" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <!-- <div class="modal-content bg-danger">
+            
+                  
+                <button type="button" class="btn-close d-flex ms-auto my-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                
+            </div> -->
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="exampleModalLabel">
+            
+            Email or passowrd is not valid or unregistered, Please follow the rules below :</h5>
+        </div>
+        <div class="modal-body p-1 bg-dark text-white pt-3">
+          <ul>
+            <li class="list-unstyled fs-6 me-3"><i class="fa-regular fa-circle-right"></i> You must enter a valid email and password if you don't have an account <a class="pb-1" href="./signup.html">signup</a> now </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

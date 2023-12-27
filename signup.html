@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whirlpool</title>
+    <link rel="shortcut icon" href="imgs/whirlpool-svgrepo-com.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="wrapper">
+        <i  class="child1" style="color: #00ff0a"></i>
+        <i class="child2"  style="color: #ff0057"></i>
+        <i class="child3" style="color: #ff0057"></i>
+        <div class="login">
+            <h2>sign up</h2>
+            <input type="text" name="login" id="loginInput" placeholder="Your name" >
+            <input type="email" name="login" id="emailInput" placeholder="Your email">
+            <input type="password" id="passwordInput" placeholder="Password">
+            <button id="btn" type="button" class="btn btn-outline-light w-50 rounded-5">sign up</button>
+            <p class="text-white" id="successful"></p>
+            <div class="links">
+                <p class="text-white" id="successful"></p>
+                <a href="./index.html">sign in</a>
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+<button id="test" type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade pt-5 mt-5 px-5 py-4" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <!-- <div class="modal-content bg-dark">
+           
+                <button type="button" class="btn-close d-flex ms-auto my-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                
+            </div> -->
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="exampleModalLabel">
+            
+            Your name , email or passowrd is not valid, Please follow the rules below :</h5>
+        </div>
+        <div class="modal-body bg-dark text-white">
+          <ul>
+            <li class="list-unstyled fs-6"><i class="fa-regular fa-circle-right"></i> Your name must contain at least 3 characters</li>
+            <li class="list-unstyled fs-6"><i class="fa-regular fa-circle-right"></i> You must enter a valid email </li>
+            <li class="list-unstyled fs-6"><i class="fa-regular fa-circle-right"></i> A password contains at least eight characters, including at least one number and includes both lower and uppercase letters and special characters, for example #, ?, !.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/signup.js"></script>
+</body>
+</html> 
