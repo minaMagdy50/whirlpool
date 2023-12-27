@@ -53,6 +53,18 @@ else if(valudationName() == false && valudationEmail() == false && valudationPas
 
 }
 
+else if(valudationPassword() == false){
+    document.getElementById("test").click()
+}
+
+else if(valudationEmail() == false){
+    document.getElementById("test").click()
+}
+
+else if(valudationName() == false){
+    document.getElementById("test").click()
+}
+
 }
 
 
