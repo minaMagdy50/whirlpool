@@ -48,8 +48,8 @@ h2, input, a ,button{
 }
 
 .wrapper:hover i {
-    border: .375rem solid #00ff0a;
-    filter: drop-shadow(0 0 20px #00ff0a);
+    border: .375rem solid red;
+    filter: drop-shadow(0 0 20px red);
 }
 
 @keyframes anim {
@@ -84,6 +84,12 @@ h2, input, a ,button{
         font-size: 30px;
     }
 }
- 
 
+button{
+    margin-left: 5.9375rem;
+    margin-top: .625rem;
+}
 
+h4{
+    color: white;
+}
